@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.env
+google-sa.json
+call-logs/
+patient-notes/
+eval/results.json
+eval/calls/
+__pycache__/

@@ -1,0 +1,35 @@
+{
+  "id": "demo",
+  "name": "Cabinet Dr. Ben Salem",
+  "doctor_name": "Dr. Ben Salem",
+  "timezone": "Africa/Tunis",
+  "address_ar": "شارع الحبيب بورقيبة، أريانة، فوق صيدلية المركز",
+  "address_fr": "Avenue Habib Bourguiba, Ariana, au-dessus de la Pharmacie du Centre",
+  "phone_line": "+21670000000",
+  "phone_secretary": "+21620000001",
+  "phone_doctor": "+21620000002",
+  "whatsapp_patient_from": "+21670000000",
+  "whatsapp_admin": ["+21620000001", "+21620000002"],
+  "hours": {
+    "1": [{ "start": "08:30", "end": "12:30" }, { "start": "14:00", "end": "18:00" }],
+    "2": [{ "start": "08:30", "end": "12:30" }, { "start": "14:00", "end": "18:00" }],
+    "3": [{ "start": "08:30", "end": "12:30" }, { "start": "14:00", "end": "18:00" }],
+    "4": [{ "start": "08:30", "end": "12:30" }, { "start": "14:00", "end": "18:00" }],
+    "5": [{ "start": "08:30", "end": "12:30" }, { "start": "14:00", "end": "17:00" }],
+    "6": [{ "start": "09:00", "end": "13:00" }]
+  },
+  "last_booking": "17:00",
+  "slot_step_minutes": 15,
+  "types": [
+    { "id": "consultation", "label_ar": "كشف", "label_fr": "Consultation", "minutes": 15, "price": { "policy": "exact", "tnd": 40 } },
+    { "id": "cleaning", "label_ar": "تنظيف", "label_fr": "Détartrage", "minutes": 30, "price": { "policy": "range", "min_tnd": 80, "max_tnd": 120 } },
+    { "id": "filling", "label_ar": "حشو", "label_fr": "Plombage", "minutes": 30, "price": { "policy": "defer" } },
+    { "id": "crown", "label_ar": "تاج", "label_fr": "Couronne", "minutes": 45, "price": { "policy": "defer" } }
+  ],
+  "faq": [
+    { "q": "CNAM", "a_ar": "إي، نخدمو بالكنام، جيب الكارنيه معاك.", "a_fr": "Oui, nous acceptons la CNAM, apportez votre carnet." },
+    { "q": "parking", "a_ar": "فما باركينغ قدام الصيدلية.", "a_fr": "Il y a un parking devant la pharmacie." }
+  ],
+  "mode": "learning",
+  "calendar": { "provider": "memory" }
+}
